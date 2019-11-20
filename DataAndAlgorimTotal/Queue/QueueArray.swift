@@ -12,13 +12,23 @@ public struct QueueArray<T>: Queue {
     private var array: [T] = []
     public init() {}
     
+    public private(set) var count = 0
+    @discardableResult
     public mutating func enqueue(_ element: T) -> Bool {
+        count += 1
         array.append(element)
         return true
     }
     
     public mutating func dequeue() -> T? {
-        return isEmpty ? nil : array.removeFirst()
+       
+        if isEmpty {
+            return nil
+        }else {
+            let value = array.removeFirst()
+            count -= 1
+            return value
+        }
     }
     
     public var isEmpty: Bool {
@@ -28,6 +38,7 @@ public struct QueueArray<T>: Queue {
     public var peek: T? {
         return array.first
     }
+    
     
     public typealias Element = T
     
