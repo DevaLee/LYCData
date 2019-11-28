@@ -10,15 +10,77 @@ import UIKit
 
 class ViewController: UIViewController {
 
+      var tree: BinaryNode<Int> = {
+          let zero = BinaryNode(value: 5)
+          let one = BinaryNode(value: 10)
+          let five = BinaryNode(value: 12)
+          let seven = BinaryNode(value: 15)
+          let eight = BinaryNode(value: 17)
+          let nine = BinaryNode(value: 25)
+          
+          seven.leftChild = one
+          one.leftChild = zero
+          one.rightChild = five
+          seven.rightChild = nine
+          nine.leftChild = eight
+          
+          return seven
+        /*
+                seven
+             
+            one         nine
+         
+         zero   five   eight
+         */
+        
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
 //       print(test7(str:"bestbestlli"))
-        
-        TreechangeOne()
+      //print(tree)
+        print(serializationTree(tree))
+    }
+    //MARK: --binaryTreeChallenage
+    
+    func treeHeight<Element>(_ tree: BinaryNode<Element>?) -> Int {
+      
+        guard let node = tree else {
+            return -1
+        }
+        return 1 + max(treeHeight(node.leftChild), treeHeight(node.rightChild))
     }
     
+    func serializationTree<T>(_ tree: BinaryNode<T>) -> [T?]{
+        var array = [T?]()
+        tree.traverSearialPreOrder { (T) in
+            array.append(T)
+        }
+        return array
+    }
+    
+//    func deserialization<T>(_ array: [T?]) -> BinaryNode<T> {
+//        let reverse
+//    }
+    //MARK: --binaryTree
+    func testTreeNodePostOrder() {
+        tree.traversePostOrder { (value) in
+            print(value)
+        }
+    }
+    
+    func testTreeNodeTraversalInOrder() {
+        tree.traverseInOrder { (value) in
+            print(value)
+        }
+    }
+    func testTreeNodePreOrderTraversal() {
+        tree.traversePreOrder { (value) in
+            print(value)
+        }
+    }
+    //MARK: --Tree
     
     func TreechangeOne() {
         let tree = TreeNode(15)
@@ -471,6 +533,11 @@ class ViewController: UIViewController {
         }
     }
 
+}
+//MARK: -- BinaryTree
+extension ViewController {
+    
+    
 }
 
 
