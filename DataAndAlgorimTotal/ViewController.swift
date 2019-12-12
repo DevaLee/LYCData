@@ -38,10 +38,63 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//       print(test7(str:"bestbestlli"))
-      //print(tree)
-        print(serializationTree(tree))
+
+        buildBST()
     }
+    
+    //MARK: -- BinarySearchTreeChallenage
+    func checkIsBinarySearchTree<Element:Comparable>(_ root: BinaryNode<Element>?) -> Bool {
+        guard let root = root else {
+            return true
+        }
+        if let left = root.leftChild {
+            if left.value > root.value {
+                return false
+            }
+        }
+        if let right = root.rightChild {
+            if right.value < root.value {
+                return false
+            }
+        }
+        
+        return checkIsBinarySearchTree(root.leftChild) == true && checkIsBinarySearchTree(root.rightChild) == true
+    }
+    
+    
+    
+    //MARK: -- BinarySearchTree
+    
+    func buildBST() {
+        var bst = BinarySearchTree<Int>()
+        
+        bst.insert(3)
+        bst.insert(1)
+        bst.insert(4)
+        bst.insert(0)
+        bst.insert(2)
+        bst.insert(5)
+        bst.insert(6)
+//        bst.insert(10)
+//        bst.insert(12)
+        
+        var bst2 = BinarySearchTree<Int>()
+        
+        bst2.insert(3)
+        bst2.insert(1)
+        bst2.insert(4)
+        bst2.insert(0)
+        bst2.insert(2)
+        bst2.insert(5)
+        bst2.insert(6)
+        
+        print(bst.containAllElement(subtree: bst2))
+        
+//        print(bst == bst2)
+        //      print(checkIsBinarySearchTree(bst.root))
+    }
+    
+    
     //MARK: --binaryTreeChallenage
     
     func treeHeight<Element>(_ tree: BinaryNode<Element>?) -> Int {
@@ -60,9 +113,6 @@ class ViewController: UIViewController {
         return array
     }
     
-//    func deserialization<T>(_ array: [T?]) -> BinaryNode<T> {
-//        let reverse
-//    }
     //MARK: --binaryTree
     func testTreeNodePostOrder() {
         tree.traversePostOrder { (value) in
