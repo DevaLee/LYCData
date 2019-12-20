@@ -26,10 +26,14 @@
 		27968BCC235FEEDE00002DCC /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27968BCB235FEEDE00002DCC /* TreeNode.swift */; };
 		4F011B39238FF18900F038E9 /* BinaryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F011B38238FF18900F038E9 /* BinaryNode.swift */; };
 		4F011B3B23900E8100F038E9 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F011B3A23900E8100F038E9 /* Summary.swift */; };
+		4F02B3C323A8B01800D83326 /* RedBlackTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02B3C223A8B01800D83326 /* RedBlackTree.swift */; };
 		4F11B63723710F4500D2013E /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11B63623710F4500D2013E /* Fibonacci.swift */; };
 		4F11B63A23710FBE00D2013E /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11B63923710FBE00D2013E /* Times.swift */; };
 		4F1C304A23A1113400B5D652 /* BSTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C304923A1113400B5D652 /* BSTNode.swift */; };
-		4F1C304D23A246A300B5D652 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C304C23A246A300B5D652 /* AVLTree.swift */; };
+		4F1C308F23A7633B00B5D652 /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C308E23A7633B00B5D652 /* AVLNode.swift */; };
+		4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C309023A7681400B5D652 /* AVLTree.swift */; };
+		4F2F27C123AB803700A8CC79 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F27C023AB803700A8CC79 /* TrieNode.swift */; };
+		4F2F27C323AB81C500A8CC79 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F27C223AB81C500A8CC79 /* Trie.swift */; };
 		4F744C3523794C9D00A18FFE /* MinSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F744C3423794C9D00A18FFE /* MinSubString.c */; };
 /* End PBXBuildFile section */
 
@@ -76,10 +80,14 @@
 		27968BCB235FEEDE00002DCC /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		4F011B38238FF18900F038E9 /* BinaryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryNode.swift; sourceTree = "<group>"; };
 		4F011B3A23900E8100F038E9 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		4F02B3C223A8B01800D83326 /* RedBlackTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBlackTree.swift; sourceTree = "<group>"; };
 		4F11B63623710F4500D2013E /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		4F11B63923710FBE00D2013E /* Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
 		4F1C304923A1113400B5D652 /* BSTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTNode.swift; sourceTree = "<group>"; };
-		4F1C304C23A246A300B5D652 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
+		4F1C308E23A7633B00B5D652 /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
+		4F1C309023A7681400B5D652 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
+		4F2F27C023AB803700A8CC79 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
+		4F2F27C223AB81C500A8CC79 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		4F744C3223794C9D00A18FFE /* DataAndAlgorimTotal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataAndAlgorimTotal-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F744C3323794C9D00A18FFE /* MinSubString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinSubString.h; sourceTree = "<group>"; };
 		4F744C3423794C9D00A18FFE /* MinSubString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinSubString.c; sourceTree = "<group>"; };
@@ -139,6 +147,8 @@
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
 				4F11B63823710FAC00D2013E /* Tools */,
 				4F11B63523710EFB00D2013E /* Application */,
+				4F02B3C123A8AFD200D83326 /* RedBlack */,
+				4F2F27BF23AB801600A8CC79 /* Trie */,
 				4F1C304B23A2446B00B5D652 /* AVLTree */,
 				4FA7A452239A979900C8CFCD /* BinarySearchTree */,
 				4F011B37238FF16400F038E9 /* BinaryTree */,
@@ -217,6 +227,14 @@
 			path = BinaryTree;
 			sourceTree = "<group>";
 		};
+		4F02B3C123A8AFD200D83326 /* RedBlack */ = {
+			isa = PBXGroup;
+			children = (
+				4F02B3C223A8B01800D83326 /* RedBlackTree.swift */,
+			);
+			path = RedBlack;
+			sourceTree = "<group>";
+		};
 		4F11B63523710EFB00D2013E /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,9 +257,19 @@
 		4F1C304B23A2446B00B5D652 /* AVLTree */ = {
 			isa = PBXGroup;
 			children = (
-				4F1C304C23A246A300B5D652 /* AVLTree.swift */,
+				4F1C308E23A7633B00B5D652 /* AVLNode.swift */,
+				4F1C309023A7681400B5D652 /* AVLTree.swift */,
 			);
 			path = AVLTree;
+			sourceTree = "<group>";
+		};
+		4F2F27BF23AB801600A8CC79 /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				4F2F27C023AB803700A8CC79 /* TrieNode.swift */,
+				4F2F27C223AB81C500A8CC79 /* Trie.swift */,
+			);
+			path = Trie;
 			sourceTree = "<group>";
 		};
 		4FA7A452239A979900C8CFCD /* BinarySearchTree */ = {
@@ -385,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F11B63A23710FBE00D2013E /* Times.swift in Sources */,
+				4F2F27C123AB803700A8CC79 /* TrieNode.swift in Sources */,
 				4F1C304A23A1113400B5D652 /* BSTNode.swift in Sources */,
 				4F11B63723710F4500D2013E /* Fibonacci.swift in Sources */,
 				27968B8C235ED24300002DCC /* ViewController.swift in Sources */,
@@ -392,7 +421,9 @@
 				27968B88235ED24300002DCC /* AppDelegate.swift in Sources */,
 				27968BBB235ED41F00002DCC /* LinkedList.swift in Sources */,
 				4F011B39238FF18900F038E9 /* BinaryNode.swift in Sources */,
+				4F02B3C323A8B01800D83326 /* RedBlackTree.swift in Sources */,
 				27968BC5235F528500002DCC /* DoubleLinkedList.swift in Sources */,
+				4F2F27C323AB81C500A8CC79 /* Trie.swift in Sources */,
 				27968B8A235ED24300002DCC /* SceneDelegate.swift in Sources */,
 				27968BC9235FE4EF00002DCC /* QueueStack.swift in Sources */,
 				27968BBE235F3ECB00002DCC /* Stack.swift in Sources */,
@@ -401,8 +432,9 @@
 				27968BC7235FE1DD00002DCC /* QueueLinkedList.swift in Sources */,
 				4F744C3523794C9D00A18FFE /* MinSubString.c in Sources */,
 				27968BC3235F4FB300002DCC /* QueueArray.swift in Sources */,
+				4F1C308F23A7633B00B5D652 /* AVLNode.swift in Sources */,
 				27968BCC235FEEDE00002DCC /* TreeNode.swift in Sources */,
-				4F1C304D23A246A300B5D652 /* AVLTree.swift in Sources */,
+				4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

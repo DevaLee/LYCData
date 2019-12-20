@@ -39,8 +39,36 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
 
-        buildBST()
+//        buildBST()
+//        buildAVL()
+        insertAndContainTries()
     }
+    
+    func buildAVL() {
+        var avl = AVLTree<Int>()
+        for i in 0..<15 {
+//            let avlNode = AVLNode(value: i)
+            avl.insert(i)
+        }
+        print(avl)
+    }
+    //MARK: -- Trie
+    func insertAndContainTries() {
+        let trie = Trie<String>()
+        trie.insert("cute")
+        trie.insert("cur")
+        trie.insert("cu")
+        trie.remove("cu")
+        if trie.contains("cute") {
+            print("1")
+        }else {
+            print("2")
+        }
+  
+        
+        
+    }
+    
     
     //MARK: -- BinarySearchTreeChallenage
     func checkIsBinarySearchTree<Element:Comparable>(_ root: BinaryNode<Element>?) -> Bool {
