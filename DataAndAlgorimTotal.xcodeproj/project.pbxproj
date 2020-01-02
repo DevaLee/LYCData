@@ -31,6 +31,8 @@
 		4F11B63A23710FBE00D2013E /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11B63923710FBE00D2013E /* Times.swift */; };
 		4F14615923BDC9180017B188 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14615823BDC9180017B188 /* BinarySearch.swift */; };
 		4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */; };
+		4F14616023BDD5300017B188 /* TheHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14615F23BDD5300017B188 /* TheHeap.swift */; };
+		4F14616223BDF2090017B188 /* TheHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14616123BDF2090017B188 /* TheHeapTests.swift */; };
 		4F1C304A23A1113400B5D652 /* BSTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C304923A1113400B5D652 /* BSTNode.swift */; };
 		4F1C308F23A7633B00B5D652 /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C308E23A7633B00B5D652 /* AVLNode.swift */; };
 		4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C309023A7681400B5D652 /* AVLTree.swift */; };
@@ -87,6 +89,8 @@
 		4F11B63923710FBE00D2013E /* Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
 		4F14615823BDC9180017B188 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
+		4F14615F23BDD5300017B188 /* TheHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheHeap.swift; sourceTree = "<group>"; };
+		4F14616123BDF2090017B188 /* TheHeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheHeapTests.swift; sourceTree = "<group>"; };
 		4F1C304923A1113400B5D652 /* BSTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTNode.swift; sourceTree = "<group>"; };
 		4F1C308E23A7633B00B5D652 /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
 		4F1C309023A7681400B5D652 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				27968B89235ED24300002DCC /* SceneDelegate.swift */,
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
+				4F14615E23BDD5210017B188 /* Heap */,
 				4F14615723BDC9010017B188 /* BinarySearch */,
 				4F11B63823710FAC00D2013E /* Tools */,
 				4F11B63523710EFB00D2013E /* Application */,
@@ -174,6 +179,7 @@
 			children = (
 				27968B9E235ED24500002DCC /* DataAndAlgorimTotalTests.swift */,
 				4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */,
+				4F14616123BDF2090017B188 /* TheHeapTests.swift */,
 				27968BA0235ED24500002DCC /* Info.plist */,
 			);
 			path = DataAndAlgorimTotalTests;
@@ -266,6 +272,14 @@
 				4F14615823BDC9180017B188 /* BinarySearch.swift */,
 			);
 			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		4F14615E23BDD5210017B188 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				4F14615F23BDD5300017B188 /* TheHeap.swift */,
+			);
+			path = Heap;
 			sourceTree = "<group>";
 		};
 		4F1C304B23A2446B00B5D652 /* AVLTree */ = {
@@ -438,6 +452,7 @@
 				4F14615923BDC9180017B188 /* BinarySearch.swift in Sources */,
 				4F011B39238FF18900F038E9 /* BinaryNode.swift in Sources */,
 				4F02B3C323A8B01800D83326 /* RedBlackTree.swift in Sources */,
+				4F14616023BDD5300017B188 /* TheHeap.swift in Sources */,
 				27968BC5235F528500002DCC /* DoubleLinkedList.swift in Sources */,
 				4F2F27C323AB81C500A8CC79 /* Trie.swift in Sources */,
 				27968B8A235ED24300002DCC /* SceneDelegate.swift in Sources */,
@@ -458,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F14616223BDF2090017B188 /* TheHeapTests.swift in Sources */,
 				4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */,
 				27968B9F235ED24500002DCC /* DataAndAlgorimTotalTests.swift in Sources */,
 			);
