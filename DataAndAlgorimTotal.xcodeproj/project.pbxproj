@@ -29,6 +29,8 @@
 		4F02B3C323A8B01800D83326 /* RedBlackTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F02B3C223A8B01800D83326 /* RedBlackTree.swift */; };
 		4F11B63723710F4500D2013E /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11B63623710F4500D2013E /* Fibonacci.swift */; };
 		4F11B63A23710FBE00D2013E /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11B63923710FBE00D2013E /* Times.swift */; };
+		4F14615923BDC9180017B188 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14615823BDC9180017B188 /* BinarySearch.swift */; };
+		4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */; };
 		4F1C304A23A1113400B5D652 /* BSTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C304923A1113400B5D652 /* BSTNode.swift */; };
 		4F1C308F23A7633B00B5D652 /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C308E23A7633B00B5D652 /* AVLNode.swift */; };
 		4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C309023A7681400B5D652 /* AVLTree.swift */; };
@@ -83,6 +85,8 @@
 		4F02B3C223A8B01800D83326 /* RedBlackTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBlackTree.swift; sourceTree = "<group>"; };
 		4F11B63623710F4500D2013E /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
 		4F11B63923710FBE00D2013E /* Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
+		4F14615823BDC9180017B188 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		4F1C304923A1113400B5D652 /* BSTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTNode.swift; sourceTree = "<group>"; };
 		4F1C308E23A7633B00B5D652 /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
 		4F1C309023A7681400B5D652 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				27968B89235ED24300002DCC /* SceneDelegate.swift */,
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
+				4F14615723BDC9010017B188 /* BinarySearch */,
 				4F11B63823710FAC00D2013E /* Tools */,
 				4F11B63523710EFB00D2013E /* Application */,
 				4F02B3C123A8AFD200D83326 /* RedBlack */,
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				27968B9E235ED24500002DCC /* DataAndAlgorimTotalTests.swift */,
+				4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */,
 				27968BA0235ED24500002DCC /* Info.plist */,
 			);
 			path = DataAndAlgorimTotalTests;
@@ -253,6 +259,14 @@
 			);
 			path = Tools;
 			sourceTree = SOURCE_ROOT;
+		};
+		4F14615723BDC9010017B188 /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				4F14615823BDC9180017B188 /* BinarySearch.swift */,
+			);
+			path = BinarySearch;
+			sourceTree = "<group>";
 		};
 		4F1C304B23A2446B00B5D652 /* AVLTree */ = {
 			isa = PBXGroup;
@@ -352,6 +366,7 @@
 					};
 					27968B99235ED24500002DCC = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1120;
 						TestTargetID = 27968B83235ED24300002DCC;
 					};
 					27968BA4235ED24500002DCC = {
@@ -420,6 +435,7 @@
 				27968BC1235F4F2D00002DCC /* Queue.swift in Sources */,
 				27968B88235ED24300002DCC /* AppDelegate.swift in Sources */,
 				27968BBB235ED41F00002DCC /* LinkedList.swift in Sources */,
+				4F14615923BDC9180017B188 /* BinarySearch.swift in Sources */,
 				4F011B39238FF18900F038E9 /* BinaryNode.swift in Sources */,
 				4F02B3C323A8B01800D83326 /* RedBlackTree.swift in Sources */,
 				27968BC5235F528500002DCC /* DoubleLinkedList.swift in Sources */,
@@ -442,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */,
 				27968B9F235ED24500002DCC /* DataAndAlgorimTotalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,6 +666,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQT5PJ7GA8;
 				INFOPLIST_FILE = DataAndAlgorimTotalTests/Info.plist;
@@ -660,6 +678,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mzjf.DataAndAlgorimTotalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DataAndAlgorimTotal.app/DataAndAlgorimTotal";
@@ -671,6 +690,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MQT5PJ7GA8;
 				INFOPLIST_FILE = DataAndAlgorimTotalTests/Info.plist;

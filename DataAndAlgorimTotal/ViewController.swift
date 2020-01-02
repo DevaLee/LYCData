@@ -41,8 +41,18 @@ class ViewController: UIViewController {
 
 //        buildBST()
 //        buildAVL()
-        insertAndContainTries()
+//        insertAndContainTries()
+        testBinarySearch()
     }
+    func testBinarySearch(){
+        let array = [1,2,3,4,5,6,7,8,9]
+       let number = array.binarySearch(for: 5)
+       
+       let index = array.firstIndex(of: 5)
+        print(number == index)
+    }
+ 
+    
     
     func buildAVL() {
         var avl = AVLTree<Int>()
