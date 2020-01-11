@@ -33,6 +33,8 @@
 		4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */; };
 		4F14616023BDD5300017B188 /* TheHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14615F23BDD5300017B188 /* TheHeap.swift */; };
 		4F14616223BDF2090017B188 /* TheHeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14616123BDF2090017B188 /* TheHeapTests.swift */; };
+		4F14616523BEDBE70017B188 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14616423BEDBE70017B188 /* PriorityQueue.swift */; };
+		4F14616723BEDDD50017B188 /* PriorityQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F14616623BEDDD50017B188 /* PriorityQueueTests.swift */; };
 		4F1C304A23A1113400B5D652 /* BSTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C304923A1113400B5D652 /* BSTNode.swift */; };
 		4F1C308F23A7633B00B5D652 /* AVLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C308E23A7633B00B5D652 /* AVLNode.swift */; };
 		4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C309023A7681400B5D652 /* AVLTree.swift */; };
@@ -91,6 +93,8 @@
 		4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		4F14615F23BDD5300017B188 /* TheHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheHeap.swift; sourceTree = "<group>"; };
 		4F14616123BDF2090017B188 /* TheHeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheHeapTests.swift; sourceTree = "<group>"; };
+		4F14616423BEDBE70017B188 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		4F14616623BEDDD50017B188 /* PriorityQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueueTests.swift; sourceTree = "<group>"; };
 		4F1C304923A1113400B5D652 /* BSTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTNode.swift; sourceTree = "<group>"; };
 		4F1C308E23A7633B00B5D652 /* AVLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLNode.swift; sourceTree = "<group>"; };
 		4F1C309023A7681400B5D652 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				27968B89235ED24300002DCC /* SceneDelegate.swift */,
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
+				4F14616323BED9160017B188 /* PriorityQueue */,
 				4F14615E23BDD5210017B188 /* Heap */,
 				4F14615723BDC9010017B188 /* BinarySearch */,
 				4F11B63823710FAC00D2013E /* Tools */,
@@ -180,6 +185,7 @@
 				27968B9E235ED24500002DCC /* DataAndAlgorimTotalTests.swift */,
 				4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */,
 				4F14616123BDF2090017B188 /* TheHeapTests.swift */,
+				4F14616623BEDDD50017B188 /* PriorityQueueTests.swift */,
 				27968BA0235ED24500002DCC /* Info.plist */,
 			);
 			path = DataAndAlgorimTotalTests;
@@ -280,6 +286,14 @@
 				4F14615F23BDD5300017B188 /* TheHeap.swift */,
 			);
 			path = Heap;
+			sourceTree = "<group>";
+		};
+		4F14616323BED9160017B188 /* PriorityQueue */ = {
+			isa = PBXGroup;
+			children = (
+				4F14616423BEDBE70017B188 /* PriorityQueue.swift */,
+			);
+			path = PriorityQueue;
 			sourceTree = "<group>";
 		};
 		4F1C304B23A2446B00B5D652 /* AVLTree */ = {
@@ -466,6 +480,7 @@
 				4F1C308F23A7633B00B5D652 /* AVLNode.swift in Sources */,
 				27968BCC235FEEDE00002DCC /* TreeNode.swift in Sources */,
 				4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */,
+				4F14616523BEDBE70017B188 /* PriorityQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F14616223BDF2090017B188 /* TheHeapTests.swift in Sources */,
+				4F14616723BEDDD50017B188 /* PriorityQueueTests.swift in Sources */,
 				4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */,
 				27968B9F235ED24500002DCC /* DataAndAlgorimTotalTests.swift in Sources */,
 			);
