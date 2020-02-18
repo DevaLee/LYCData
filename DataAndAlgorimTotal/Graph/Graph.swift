@@ -61,3 +61,33 @@ extension Graph {
         visited.remove(source)
     }
 }
+
+
+extension Graph where Element: Hashable {
+    
+    func breadthFirstSearch(from source: Vertex<Element>) -> [Vertex<Element>] {
+        
+        var queue = QueueStack<Vertex<Element>>()
+        var enqueued: Set<Vertex<Element>> = [] // 已经遍历元素的总和
+        var visited:[Vertex<Element>] = []
+        
+        queue.enqueue(source)
+        enqueued.insert(source)
+        
+        // 当queue中没有数据时，查找结束
+        while let vertex = queue.dequeue() {
+            visited.append(vertex)
+            
+            let neighborEdges = edges(from: vertex)
+            neighborEdges.forEach { edge in
+                // 如果集合中没有edge，进入队列，遍历它的邻居
+                if !enqueued.contains(edge.destination) {
+                    queue.enqueue(edge.destination)
+                    enqueued.insert(edge.destination)
+                }
+            }
+        }
+        
+        return visited
+    }
+}

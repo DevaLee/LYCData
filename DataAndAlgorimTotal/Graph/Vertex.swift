@@ -18,12 +18,13 @@ public struct Vertex<T>  {
 
 
 extension Vertex: Hashable{
+    // 以 index 的哈希值作为唯一性标识
     public var hashValue: Int {
         return index.hashValue
     }
     public static func ==(lhs: Vertex, rhs: Vertex) -> Bool {
                  return lhs.index == rhs.index
-          }
+    }
 }
 
 

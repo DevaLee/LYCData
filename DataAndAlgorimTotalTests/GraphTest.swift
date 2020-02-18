@@ -79,8 +79,10 @@ class GraphTest: XCTestCase {
 //        for  edge in edges {
 //
 //        }
-        print(graph.numberOfPaths(from: vertexA, to: vertexE))
-       
+        
+//        print(graph.numberOfPaths(from: vertexA, to: vertexE))
+        
+        print(graph.breadthFirstSearch(from: vertexA))
         
         XCTAssertNotNil(graph)
         

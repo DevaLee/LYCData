@@ -21,7 +21,7 @@ public struct QueueStack<T>: Queue {
             rightStack.removeAll()
         }
         
-        return leftStack.removeLast()
+        return leftStack.popLast()
     }
     
     public var isEmpty: Bool {
