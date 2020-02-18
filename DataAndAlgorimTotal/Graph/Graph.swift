@@ -71,12 +71,15 @@ extension Graph where Element: Hashable {
         var enqueued: Set<Vertex<Element>> = [] // 已经遍历元素的总和
         var visited:[Vertex<Element>] = []
         
+        var maxNum = 1
         queue.enqueue(source)
         enqueued.insert(source)
         
         // 当queue中没有数据时，查找结束
         while let vertex = queue.dequeue() {
             visited.append(vertex)
+            
+            maxNum = maxNum > queue.queueItemCounts() ?  maxNum : queue.queueItemCounts()
             
             let neighborEdges = edges(from: vertex)
             neighborEdges.forEach { edge in
@@ -88,6 +91,7 @@ extension Graph where Element: Hashable {
             }
         }
         
+        print("max Item Number of Item In Queue \(maxNum)")
         return visited
     }
 }

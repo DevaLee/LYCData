@@ -40,3 +40,11 @@ public struct QueueStack<T>: Queue {
     public init() {}
     
 }
+
+
+extension QueueStack {
+    
+    func queueItemCounts() -> Int {
+        return rightStack.count + leftStack.count
+    }
+}
