@@ -64,7 +64,13 @@ extension Graph {
 
 
 extension Graph where Element: Hashable {
+    /*
+     1，Generating a minimum-spanning tree
+     2，Finding potential paths between vertices
+     3，Finding the shortest path between two vertices
+     */
     
+    // 广度优先搜索
     func breadthFirstSearch(from source: Vertex<Element>) -> [Vertex<Element>] {
         
         var queue = QueueStack<Vertex<Element>>()
@@ -92,6 +98,54 @@ extension Graph where Element: Hashable {
         }
         
         print("max Item Number of Item In Queue \(maxNum)")
+        return visited
+    }
+}
+
+
+
+
+extension Graph where Element: Hashable {
+    /*
+     1,拓扑排序
+     2,Detecting a cycle
+     3，Path finding, such as in maze puzzles  （maze puzzles: 迷宫拼图）
+     4，Finding connected components in a sparse graph（在稀疏图中查找连接的组件）
+     */
+    
+    func depthFirstSearch(from source: Vertex<Element>) -> [Vertex<Element>] {
+        var stack: Stack<Vertex<Element>> = [] // 路径
+        var pushed: Set<Vertex<Element>> = [] // 记录已经访问的
+        var visited: [Vertex<Element>] = [] // 最终的结果
+        
+        stack.push(source)
+        pushed.insert(source)
+        visited.append(source)
+       
+        outer : while let vertex = stack.peek() {
+            let neighbors = edges(from: vertex)
+            
+            guard !neighbors.isEmpty else {
+                stack.pop()
+                continue
+            }
+            
+            for edge in neighbors {
+                // 没有访问过
+                if !pushed.contains(vertex) {
+                    stack.push(edge.destination)
+                    pushed.insert(edge.destination)
+                    visited.append(edge.destination)
+                    
+                    continue outer
+                }
+            }
+            
+            // 该节点全都访问过后在将该节点pop
+            stack.pop()
+        }
+        
+        
         return visited
     }
 }

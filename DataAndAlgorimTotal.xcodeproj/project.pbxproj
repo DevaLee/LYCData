@@ -52,6 +52,7 @@
 		4FD71D1723FA3E8700057372 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1623FA3E8700057372 /* AdjacencyList.swift */; };
 		4FD71D1923FA46D100057372 /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1823FA46D100057372 /* GraphTest.swift */; };
 		4FD71D1B23FA55BB00057372 /* AdjacencyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1A23FA55BB00057372 /* AdjacencyMatrix.swift */; };
+		4FD71D1E23FBB33700057372 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1D23FBB33700057372 /* Dijkstra.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		4FD71D1623FA3E8700057372 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
 		4FD71D1823FA46D100057372 /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 		4FD71D1A23FA55BB00057372 /* AdjacencyMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyMatrix.swift; sourceTree = "<group>"; };
+		4FD71D1D23FBB33700057372 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				27968B89235ED24300002DCC /* SceneDelegate.swift */,
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
+				4FD71D1C23FBB2AD00057372 /* DijkstraAlgorithm */,
 				4FD71D0F23FA26A400057372 /* Graph */,
 				4FB1729623C9CD98009C9034 /* Sort */,
 				4F14616323BED9160017B188 /* PriorityQueue */,
@@ -371,6 +374,14 @@
 			path = Graph;
 			sourceTree = "<group>";
 		};
+		4FD71D1C23FBB2AD00057372 /* DijkstraAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				4FD71D1D23FBB33700057372 /* Dijkstra.swift */,
+			);
+			path = DijkstraAlgorithm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -523,6 +534,7 @@
 				4F14616023BDD5300017B188 /* TheHeap.swift in Sources */,
 				27968BC5235F528500002DCC /* DoubleLinkedList.swift in Sources */,
 				4F2F27C323AB81C500A8CC79 /* Trie.swift in Sources */,
+				4FD71D1E23FBB33700057372 /* Dijkstra.swift in Sources */,
 				27968B8A235ED24300002DCC /* SceneDelegate.swift in Sources */,
 				4FB1729C23C9D174009C9034 /* SelectionSort.swift in Sources */,
 				27968BC9235FE4EF00002DCC /* QueueStack.swift in Sources */,
