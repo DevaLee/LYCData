@@ -42,7 +42,9 @@ class ViewController: UIViewController {
 //        buildBST()
 //        buildAVL()
 //        insertAndContainTries()
-        testBinarySearch()
+//        testBinarySearch()
+        
+//        Programmers.isUniqueChar(str: "ssdedfeef")
     }
     
 

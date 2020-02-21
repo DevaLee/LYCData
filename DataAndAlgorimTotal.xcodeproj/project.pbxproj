@@ -41,6 +41,8 @@
 		4F2F27C123AB803700A8CC79 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F27C023AB803700A8CC79 /* TrieNode.swift */; };
 		4F2F27C323AB81C500A8CC79 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F27C223AB81C500A8CC79 /* Trie.swift */; };
 		4F3B4EAE23FFC27000CF3100 /* Prim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B4EAD23FFC27000CF3100 /* Prim.swift */; };
+		4F3B4EB123FFDFA300CF3100 /* Programmers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B4EB023FFDFA300CF3100 /* Programmers.swift */; };
+		4F3B4EB523FFE4DD00CF3100 /* ProgrammerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B4EB423FFE4DD00CF3100 /* ProgrammerTest.swift */; };
 		4F744C3523794C9D00A18FFE /* MinSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F744C3423794C9D00A18FFE /* MinSubString.c */; };
 		4FB1729823C9CDEF009C9034 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1729723C9CDEF009C9034 /* BubbleSort.swift */; };
 		4FB1729A23C9CF2C009C9034 /* BubbleSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1729923C9CF2C009C9034 /* BubbleSortTests.swift */; };
@@ -114,6 +116,8 @@
 		4F2F27C023AB803700A8CC79 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 		4F2F27C223AB81C500A8CC79 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		4F3B4EAD23FFC27000CF3100 /* Prim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prim.swift; sourceTree = "<group>"; };
+		4F3B4EB023FFDFA300CF3100 /* Programmers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmers.swift; sourceTree = "<group>"; };
+		4F3B4EB423FFE4DD00CF3100 /* ProgrammerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammerTest.swift; sourceTree = "<group>"; };
 		4F744C3223794C9D00A18FFE /* DataAndAlgorimTotal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataAndAlgorimTotal-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F744C3323794C9D00A18FFE /* MinSubString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinSubString.h; sourceTree = "<group>"; };
 		4F744C3423794C9D00A18FFE /* MinSubString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinSubString.c; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				27968B89235ED24300002DCC /* SceneDelegate.swift */,
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
+				4F3B4EAF23FFDF6C00CF3100 /* Questions */,
 				4F3B4EAC23FFBAA100CF3100 /* PrimsAlgorithm */,
 				4FD71D1C23FBB2AD00057372 /* DijkstraAlgorithm */,
 				4FD71D0F23FA26A400057372 /* Graph */,
@@ -219,6 +224,7 @@
 				4F14616623BEDDD50017B188 /* PriorityQueueTests.swift */,
 				4FB1729923C9CF2C009C9034 /* BubbleSortTests.swift */,
 				4FB1729D23C9D80F009C9034 /* SelectionSortTests.swift */,
+				4F3B4EB423FFE4DD00CF3100 /* ProgrammerTest.swift */,
 				27968BA0235ED24500002DCC /* Info.plist */,
 			);
 			path = DataAndAlgorimTotalTests;
@@ -353,6 +359,14 @@
 				4F3B4EAD23FFC27000CF3100 /* Prim.swift */,
 			);
 			path = PrimsAlgorithm;
+			sourceTree = "<group>";
+		};
+		4F3B4EAF23FFDF6C00CF3100 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				4F3B4EB023FFDFA300CF3100 /* Programmers.swift */,
+			);
+			path = Questions;
 			sourceTree = "<group>";
 		};
 		4FA7A452239A979900C8CFCD /* BinarySearchTree */ = {
@@ -560,6 +574,7 @@
 				4F1C308F23A7633B00B5D652 /* AVLNode.swift in Sources */,
 				27968BCC235FEEDE00002DCC /* TreeNode.swift in Sources */,
 				4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */,
+				4F3B4EB123FFDFA300CF3100 /* Programmers.swift in Sources */,
 				4FB172A023C9F7C8009C9034 /* InsertionSort.swift in Sources */,
 				4F14616523BEDBE70017B188 /* PriorityQueue.swift in Sources */,
 			);
@@ -572,6 +587,7 @@
 				4FB1729E23C9D80F009C9034 /* SelectionSortTests.swift in Sources */,
 				4FD71D1923FA46D100057372 /* GraphTest.swift in Sources */,
 				4F14616223BDF2090017B188 /* TheHeapTests.swift in Sources */,
+				4F3B4EB523FFE4DD00CF3100 /* ProgrammerTest.swift in Sources */,
 				4F14616723BEDDD50017B188 /* PriorityQueueTests.swift in Sources */,
 				4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */,
 				4FB1729A23C9CF2C009C9034 /* BubbleSortTests.swift in Sources */,
