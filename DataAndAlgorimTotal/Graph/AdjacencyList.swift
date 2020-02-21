@@ -17,6 +17,11 @@ public class AdjacencyList<T: Hashable> :Graph {
     private var adjacencies:[Vertex<T>: [Edge<T>]] = [:]
     public init() {}
     
+    public var vertices: [Vertex<T>] {
+        
+        return Array(adjacencies.keys)
+    }
+    
     
     public func createVertex(data: T) -> Vertex<T> {
         
@@ -61,6 +66,17 @@ public class AdjacencyList<T: Hashable> :Graph {
      }
 }
 
+extension AdjacencyList {
+    
+    public func copyVertices(from graph: AdjacencyList) {
+        for vertex in graph.vertices {
+            adjacencies[vertex] = []
+        }
+    }
+}
+
+
+
 extension AdjacencyList: CustomStringConvertible {
   
   public var description: String {
@@ -79,3 +95,5 @@ extension AdjacencyList: CustomStringConvertible {
     return result
   }
 }
+
+

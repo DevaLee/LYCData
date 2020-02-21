@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Edge<T> {
+public struct Edge<T>: Equatable {
     public let source: Vertex<T>
     public let destination: Vertex<T>
     public let weight: Double?

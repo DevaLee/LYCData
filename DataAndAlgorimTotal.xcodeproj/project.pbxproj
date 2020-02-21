@@ -40,6 +40,7 @@
 		4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C309023A7681400B5D652 /* AVLTree.swift */; };
 		4F2F27C123AB803700A8CC79 /* TrieNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F27C023AB803700A8CC79 /* TrieNode.swift */; };
 		4F2F27C323AB81C500A8CC79 /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2F27C223AB81C500A8CC79 /* Trie.swift */; };
+		4F3B4EAE23FFC27000CF3100 /* Prim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B4EAD23FFC27000CF3100 /* Prim.swift */; };
 		4F744C3523794C9D00A18FFE /* MinSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F744C3423794C9D00A18FFE /* MinSubString.c */; };
 		4FB1729823C9CDEF009C9034 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1729723C9CDEF009C9034 /* BubbleSort.swift */; };
 		4FB1729A23C9CF2C009C9034 /* BubbleSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1729923C9CF2C009C9034 /* BubbleSortTests.swift */; };
@@ -112,6 +113,7 @@
 		4F1C309023A7681400B5D652 /* AVLTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLTree.swift; sourceTree = "<group>"; };
 		4F2F27C023AB803700A8CC79 /* TrieNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieNode.swift; sourceTree = "<group>"; };
 		4F2F27C223AB81C500A8CC79 /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		4F3B4EAD23FFC27000CF3100 /* Prim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prim.swift; sourceTree = "<group>"; };
 		4F744C3223794C9D00A18FFE /* DataAndAlgorimTotal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataAndAlgorimTotal-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F744C3323794C9D00A18FFE /* MinSubString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinSubString.h; sourceTree = "<group>"; };
 		4F744C3423794C9D00A18FFE /* MinSubString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MinSubString.c; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				27968B89235ED24300002DCC /* SceneDelegate.swift */,
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
+				4F3B4EAC23FFBAA100CF3100 /* PrimsAlgorithm */,
 				4FD71D1C23FBB2AD00057372 /* DijkstraAlgorithm */,
 				4FD71D0F23FA26A400057372 /* Graph */,
 				4FB1729623C9CD98009C9034 /* Sort */,
@@ -342,6 +345,14 @@
 				4F2F27C223AB81C500A8CC79 /* Trie.swift */,
 			);
 			path = Trie;
+			sourceTree = "<group>";
+		};
+		4F3B4EAC23FFBAA100CF3100 /* PrimsAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				4F3B4EAD23FFC27000CF3100 /* Prim.swift */,
+			);
+			path = PrimsAlgorithm;
 			sourceTree = "<group>";
 		};
 		4FA7A452239A979900C8CFCD /* BinarySearchTree */ = {
@@ -536,6 +547,7 @@
 				4F2F27C323AB81C500A8CC79 /* Trie.swift in Sources */,
 				4FD71D1E23FBB33700057372 /* Dijkstra.swift in Sources */,
 				27968B8A235ED24300002DCC /* SceneDelegate.swift in Sources */,
+				4F3B4EAE23FFC27000CF3100 /* Prim.swift in Sources */,
 				4FB1729C23C9D174009C9034 /* SelectionSort.swift in Sources */,
 				27968BC9235FE4EF00002DCC /* QueueStack.swift in Sources */,
 				27968BBE235F3ECB00002DCC /* Stack.swift in Sources */,
