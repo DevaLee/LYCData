@@ -43,4 +43,31 @@ class ProgrammerTest: XCTestCase {
           
           XCTAssertEqual(str, "ccabb")
       }
+    
+    func testSortedEqual() {
+        
+        XCTAssertTrue(Programmers.permutation(s1: "wesweef", s2: "weseefw"))
+    }
+    
+    func testReplaceString() {
+        
+        let str = "abc hnj ert"
+
+        XCTAssertEqual(Programmers.replaceSpace(str: str), "abc%20hnj%20ert")
+    }
+    
+    func testStringCompose() {
+        
+        let str = "abbcdeeeaaawb"
+        XCTAssertEqual(Programmers.composeString(str), "ab2cde3a3wb")
+    }
+    
+    func testSetZeroMatrix() {
+        var matrix = [[1, 2, 3], [4, 0, 6], [7, 8, 9]]
+        
+        let changeMatrix = [[1, 0, 3], [0, 0, 0], [7, 0, 9]]
+        Programmers.setZeros(matrix: &matrix)
+        
+        XCTAssertEqual(matrix, changeMatrix)
+    }
 }
