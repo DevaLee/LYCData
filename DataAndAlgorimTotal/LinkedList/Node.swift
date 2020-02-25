@@ -31,3 +31,15 @@ extension Node: CustomStringConvertible {
         return "\(value) -> " + String(describing: next)
     }
 }
+
+
+extension Node :Equatable where Value :Comparable {
+    
+    
+    public static func == (lhs: Node<Value>, rhs: Node<Value>) -> Bool {
+        
+        return lhs.value == rhs.value && lhs.previous == rhs.previous && lhs.next == rhs.next
+    }
+    
+    
+}

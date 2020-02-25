@@ -18,6 +18,17 @@ public struct LinkedList<Value> {
     }
     
     
+    public func length() -> Int{
+        var i = 0
+        var runner = head
+        while runner != nil {
+            i += 1
+            runner = runner?.next
+        }
+        return i
+    }
+    
+    
     // push append insert(after:)
     
     public mutating func push(_ value: Value){
@@ -148,6 +159,7 @@ extension LinkedList: CustomStringConvertible {
 }
 
 extension LinkedList: Collection {
+   
     
     public struct Index: Comparable {
         public var node: Node<Value>?
@@ -173,6 +185,8 @@ extension LinkedList: Collection {
             return nodes.contains { $0 === rhs.node }
         }
     }
+    
+ 
     
     public var startIndex: LinkedList<Value>.Index {
         return Index(node: head)
