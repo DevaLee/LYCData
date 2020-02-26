@@ -32,7 +32,10 @@ public struct LinkedList<Value> {
     // push append insert(after:)
     
     public mutating func push(_ value: Value){
-        head = Node(value: value, next:head)
+        let node = Node(value: value, next:head)
+        head = node
+        
+        
         if(tail == nil){
             tail = head
         }

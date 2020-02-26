@@ -223,27 +223,115 @@ class LinkProgrammer: NSObject {
         return newNode
     }
     
+    //MARK: -- 检测链表是否是环路
+    static func checkLinkIsCircle<T>(node: Node<T>?) ->Bool {
+        var flag = false
+        
+        var slowNode = node;
+        var fastNode = node;
+        
+        while slowNode != nil && fastNode != nil {
+
+            if let _ = fastNode?.next, let fnextnext = fastNode?.next?.next {
+                fastNode = fnextnext
+                slowNode = slowNode?.next
+                if fastNode == slowNode {
+                    flag = true
+                    break
+                }else {
+                    flag = false
+                }
+            }else {
+                flag = false
+                break
+            }
+            
+        }
+        
+        return flag
+    }
     
-//    static func checkLinkIsCircle<T:Equatable>(node: Node<T>?) ->Bool {
-//        var flag = false
-//        
-//        var slowNode = node;
-//        var fastNode = node;
-//        
-//        while slowNode != nil && fastNode != nil {
-////            if    fastNode.next?.next != nil {
-////                fastNode = fastNode.next.next
-////                slowNode = slowNode.next
-////            }else {
-////                flag = false
-////                break
-////            }
-//            
-//        }
-//        
-//        
-//    }
+    //MARK:--给定一个有环链表，实现一个算法返回环路的开头节点
+    /*
+     给定一个有环链表，实现一个算法返回环路的开头节点
+     1，创建两个指针，slow和fast
+     2，slow走一步，fast走两步
+     3，两者碰撞在一起时，slow指向链表的header， fast不变
+     4，一次一步，以相同的速度返回新的碰撞处
+     */
     
+    
+    static func findBegining<T>(linkNode:Node<T>?) -> Node<T>? {
+        var slowNode = linkNode
+        var fastNode = linkNode
+        
+        var beginNode: Node<T>?
+        while slowNode != nil, fastNode != nil {
+            if ((fastNode?.next?.next) != nil) && ((fastNode?.next) != nil) {
+                let slowNext = slowNode?.next
+                let fastNext = fastNode?.next?.next
+                
+                if fastNext == slowNext {
+                    
+                    beginNode = findSecondCollision(slow: linkNode, fast: fastNext)
+                    break
+                }else {
+                    slowNode = slowNext
+                    fastNode = fastNext
+                }
+                
+            }else {
+                break
+            }
+            
+        }
+        return beginNode
+    }
+    
+    private static func findSecondCollision<T>(slow:Node<T>?, fast:Node<T>?) -> Node<T>?{
+        
+        var slowNode = slow
+        var fastNode = fast
+
+        while slowNode != fastNode {
+            slowNode = slowNode?.next
+            fastNode = fastNode?.next
+        }
+    
+        return slowNode
+    }
+    
+    //MARK:-- 检查链表是否是回文
+    static func isPalindrome<T: Equatable>(node: Node<T>?) -> Bool {
+        
+        var slowRunner = node
+        var fastRunner = node
+        var stack = Stack<Node<T>?>()
+        while fastRunner != nil && fastRunner?.next != nil {
+            stack.push(slowRunner)
+            slowRunner = slowRunner?.next
+            fastRunner = fastRunner?.next?.next
+        }
+        // 奇数
+        if fastRunner != nil && fastRunner?.next == nil {
+            slowRunner = slowRunner?.next
+        }
+        
+        var flag = true
+        
+        var popNode = stack.pop() as? Node<T>
+        
+        while slowRunner != nil  {
+            if popNode?.value != slowRunner?.value {
+                flag = false
+                break
+            }else {
+                popNode = stack.pop() as? Node<T>
+                slowRunner = slowRunner?.next
+            }
+        }
+        return flag
+    }
     
     
     

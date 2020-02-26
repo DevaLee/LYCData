@@ -161,11 +161,79 @@ class LinkProgrammerTest: XCTestCase {
         
     }
     
-//    func testNodeEquatable(){
-//        var linkListOne = LinkedList<Int>()
-//        linkListOne.append(7)
-//    
-//        
-//        XCTAssertEqual(true, linkListOne.head == linkListOne.head)
-//    }
+    func testCircleLinkFalse(){
+        let node1 = Node(value: 1)
+        let node2 = Node(value: 1)
+        let node3 = Node(value: 2)
+        let node4 = Node(value: 3)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        
+        XCTAssertFalse(LinkProgrammer.checkLinkIsCircle(node: node1))
+        
+        
+    }
+    
+    func testCircleLinkTrue() {
+        let node1 = Node(value: 1)
+        let node2 = Node(value: 1)
+        let node3 = Node(value: 2)
+        let node4 = Node(value: 3)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node1
+        
+        XCTAssertTrue(LinkProgrammer.checkLinkIsCircle(node: node1))
+    }
+    
+    
+    func testCircleBegin(){
+        let node1 = Node(value: 1)
+        let node2 = Node(value: 1)
+        let node3 = Node(value: 2)
+        let node4 = Node(value: 3)
+        let node5 = Node(value: 5)
+        let node6 = Node(value: 4)
+        let node7 = Node(value: 2)
+        let node8 = Node(value: 3)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        node5.next = node6
+        node6.next = node7
+        node7.next = node8
+        node8.next = node3
+        
+        XCTAssertEqual(node3, LinkProgrammer.findBegining(linkNode: node1))
+    }
+    
+    
+    func testIsPlindrome() {
+        let node1 = Node(value: 1)
+        let node2 = Node(value: 2)
+        let node3 = Node(value: 3)
+        let node4 = Node(value: 4)
+        let node9 = Node(value: 8)
+        let node5 = Node(value: 4)
+        let node6 = Node(value: 3)
+        let node7 = Node(value: 2)
+        let node8 = Node(value: 1)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node9
+        node9.next = node5
+        node5.next = node6
+        node6.next = node7
+        node7.next = node8
+        
+        XCTAssertTrue(LinkProgrammer.isPalindrome(node: node1))
+    }
 }

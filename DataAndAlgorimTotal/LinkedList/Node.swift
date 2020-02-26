@@ -13,6 +13,7 @@ public class Node<Value> {
     public var value: Value
     public var next: Node?
     public var previous: Node?
+    public var tag: Int?
     
     public init(value: Value, next: Node? = nil ){
         self.value = value
@@ -33,12 +34,14 @@ extension Node: CustomStringConvertible {
 }
 
 
-extension Node :Equatable where Value :Comparable {
+extension Node :Equatable {
     
     
     public static func == (lhs: Node<Value>, rhs: Node<Value>) -> Bool {
         
-        return lhs.value == rhs.value && lhs.previous == rhs.previous && lhs.next == rhs.next
+        var lhsC = lhs
+        var rhsC = rhs
+        return Mems.memStr(ofVal: &lhsC) == Mems.memStr(ofVal: &rhsC)
     }
     
     
