@@ -8,13 +8,32 @@
 
 import UIKit
 
+
+struct Person {
+    var name: String
+
+    mutating func changeName(_ newName: String) {
+        name = newName
+    }
+}
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let person1 = Person(name: "1")
+        let person2 = Person(name: "2")
+        let array = [person1, person2]
+        
+        for var person in array {
+            person.changeName("TTTT")
+        }
+
+        print(array)
+
+
         return true
     }
 
