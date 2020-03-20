@@ -34,5 +34,23 @@ class StackProgrammerTest: XCTestCase {
         XCTAssertEqual(value, 4)
 
     }
+    
+    func testHanNuoTower() {
+        let towerOne = Tower(1)
+        let towerTwo = Tower(2)
+        let towerThree = Tower(3)
+        
+//        towerOne.add(4)
+        towerOne.add(3)
+        towerOne.add(2)
+        towerOne.add(1)
+        
+        towerOne.moveDisks(n: 3, destination: towerThree, buffer: towerTwo)
+        
+        print(towerTwo.disks)
+        
+        XCTAssert(towerThree != nil)
+        
+    }
 
 }
