@@ -9,7 +9,8 @@
 public struct Stack<Element> {
     private var storage: [Element] = []
     var stackCapacity: Int?
-    public init() {}
+    public init() {
+    }
     
     public init(_ elements: [Element]) {
         storage = elements

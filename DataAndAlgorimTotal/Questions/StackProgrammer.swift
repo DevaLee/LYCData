@@ -20,12 +20,33 @@ class StackProgrammer: NSObject {
 
 
 extension StackProgrammer {
-    //MARK: -- 汉诺塔 ---- begin
-    
-    
+    //MARK: -- 对栈排序 ---- begin
+    // 编写程序，按升序对栈进行排序，最多只能使用一个额外的栈存放临时数据，但不能讲元素复制到
+    // 别的数据结构中（如数组）。该栈支持如下操作：push、pop、peek和 isEmpty.
 
+   static func sortStack<T: Comparable>(stack: Stack<T>) -> Stack<T> {
+        var sortedStack = Stack<T>([])
+
+        var nStack = stack
+
+        while !nStack.isEmpty() {
+            let tmpValue = nStack.pop()!
+            while   tmpValue < sortedStack.peek() ?? tmpValue {
+                nStack.push(sortedStack.pop() ?? tmpValue)
+            }
+
+            sortedStack.push(tmpValue)
+        }
+
+        return sortedStack
+
+    }
 }
 
+
+
+
+//MARK: -- 汉诺塔 ---- begin
 public class Tower {
     var disks = Stack<Int>()
     private var _index = 0
@@ -70,6 +91,7 @@ public class Tower {
     }
 }
 
+//MARK: -- 汉诺塔 ---- ends
 
 
 

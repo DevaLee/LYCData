@@ -59,6 +59,7 @@
 		4FD71D1923FA46D100057372 /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1823FA46D100057372 /* GraphTest.swift */; };
 		4FD71D1B23FA55BB00057372 /* AdjacencyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1A23FA55BB00057372 /* AdjacencyMatrix.swift */; };
 		4FD71D1E23FBB33700057372 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1D23FBB33700057372 /* Dijkstra.swift */; };
+		89E48298242786390026EB90 /* TreeGraphProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E48297242786390026EB90 /* TreeGraphProgrammer.swift */; };
 		89EC67782413D75C009BE2F1 /* StackProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC67772413D75C009BE2F1 /* StackProgrammer.swift */; };
 		89EC677A2413E160009BE2F1 /* StackProgrammerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */; };
 /* End PBXBuildFile section */
@@ -141,6 +142,7 @@
 		4FD71D1823FA46D100057372 /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 		4FD71D1A23FA55BB00057372 /* AdjacencyMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyMatrix.swift; sourceTree = "<group>"; };
 		4FD71D1D23FBB33700057372 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
+		89E48297242786390026EB90 /* TreeGraphProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGraphProgrammer.swift; sourceTree = "<group>"; };
 		89EC67772413D75C009BE2F1 /* StackProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProgrammer.swift; sourceTree = "<group>"; };
 		89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProgrammerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -380,6 +382,7 @@
 				4F3B4EB023FFDFA300CF3100 /* Programmers.swift */,
 				4F576EDF2404BC1800C9C299 /* LinkProgrammer.swift */,
 				89EC67772413D75C009BE2F1 /* StackProgrammer.swift */,
+				89E48297242786390026EB90 /* TreeGraphProgrammer.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				4F71F00F24064ECB00DD1021 /* Mems.swift in Sources */,
 				4F11B63A23710FBE00D2013E /* Times.swift in Sources */,
 				4F2F27C123AB803700A8CC79 /* TrieNode.swift in Sources */,
+				89E48298242786390026EB90 /* TreeGraphProgrammer.swift in Sources */,
 				4FD71D1123FA26CC00057372 /* Edge.swift in Sources */,
 				4FD71D1B23FA55BB00057372 /* AdjacencyMatrix.swift in Sources */,
 				4F1C304A23A1113400B5D652 /* BSTNode.swift in Sources */,

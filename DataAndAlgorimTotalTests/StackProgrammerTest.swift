@@ -53,4 +53,13 @@ class StackProgrammerTest: XCTestCase {
         
     }
 
+    func testStackSortUseOnlyOneStack(){
+        let stack = Stack([4, 2, 5, 1, 3, 6, 3])
+
+       print(StackProgrammer.sortStack(stack: stack))
+
+        XCTAssertTrue(stack != nil)
+
+    }
+
 }
