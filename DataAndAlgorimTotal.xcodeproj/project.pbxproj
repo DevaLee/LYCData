@@ -45,6 +45,8 @@
 		4F3B4EB523FFE4DD00CF3100 /* ProgrammerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B4EB423FFE4DD00CF3100 /* ProgrammerTest.swift */; };
 		4F576EE02404BC1800C9C299 /* LinkProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F576EDF2404BC1800C9C299 /* LinkProgrammer.swift */; };
 		4F576EE22404BFB500C9C299 /* LinkProgrammerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F576EE12404BFB500C9C299 /* LinkProgrammerTest.swift */; };
+		4F5B3609242DA88600B44A51 /* MathProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B3608242DA88600B44A51 /* MathProgrammer.swift */; };
+		4F5B360B242DB09600B44A51 /* MathProgrammerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5B360A242DB09600B44A51 /* MathProgrammerTest.swift */; };
 		4F71F00F24064ECB00DD1021 /* Mems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F71F00E24064ECB00DD1021 /* Mems.swift */; };
 		4F744C3523794C9D00A18FFE /* MinSubString.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F744C3423794C9D00A18FFE /* MinSubString.c */; };
 		4FB1729823C9CDEF009C9034 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB1729723C9CDEF009C9034 /* BubbleSort.swift */; };
@@ -126,6 +128,8 @@
 		4F3B4EB423FFE4DD00CF3100 /* ProgrammerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammerTest.swift; sourceTree = "<group>"; };
 		4F576EDF2404BC1800C9C299 /* LinkProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkProgrammer.swift; sourceTree = "<group>"; };
 		4F576EE12404BFB500C9C299 /* LinkProgrammerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkProgrammerTest.swift; sourceTree = "<group>"; };
+		4F5B3608242DA88600B44A51 /* MathProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathProgrammer.swift; sourceTree = "<group>"; };
+		4F5B360A242DB09600B44A51 /* MathProgrammerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathProgrammerTest.swift; sourceTree = "<group>"; };
 		4F71F00E24064ECB00DD1021 /* Mems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mems.swift; sourceTree = "<group>"; };
 		4F744C3223794C9D00A18FFE /* DataAndAlgorimTotal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataAndAlgorimTotal-Bridging-Header.h"; sourceTree = "<group>"; };
 		4F744C3323794C9D00A18FFE /* MinSubString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinSubString.h; sourceTree = "<group>"; };
@@ -240,6 +244,7 @@
 				4F3B4EB423FFE4DD00CF3100 /* ProgrammerTest.swift */,
 				4F576EE12404BFB500C9C299 /* LinkProgrammerTest.swift */,
 				89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */,
+				4F5B360A242DB09600B44A51 /* MathProgrammerTest.swift */,
 				27968BA0235ED24500002DCC /* Info.plist */,
 			);
 			path = DataAndAlgorimTotalTests;
@@ -383,6 +388,7 @@
 				4F576EDF2404BC1800C9C299 /* LinkProgrammer.swift */,
 				89EC67772413D75C009BE2F1 /* StackProgrammer.swift */,
 				89E48297242786390026EB90 /* TreeGraphProgrammer.swift */,
+				4F5B3608242DA88600B44A51 /* MathProgrammer.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -571,6 +577,7 @@
 				4F2F27C123AB803700A8CC79 /* TrieNode.swift in Sources */,
 				89E48298242786390026EB90 /* TreeGraphProgrammer.swift in Sources */,
 				4FD71D1123FA26CC00057372 /* Edge.swift in Sources */,
+				4F5B3609242DA88600B44A51 /* MathProgrammer.swift in Sources */,
 				4FD71D1B23FA55BB00057372 /* AdjacencyMatrix.swift in Sources */,
 				4F1C304A23A1113400B5D652 /* BSTNode.swift in Sources */,
 				4F11B63723710F4500D2013E /* Fibonacci.swift in Sources */,
@@ -624,6 +631,7 @@
 				4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */,
 				4FB1729A23C9CF2C009C9034 /* BubbleSortTests.swift in Sources */,
 				27968B9F235ED24500002DCC /* DataAndAlgorimTotalTests.swift in Sources */,
+				4F5B360B242DB09600B44A51 /* MathProgrammerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

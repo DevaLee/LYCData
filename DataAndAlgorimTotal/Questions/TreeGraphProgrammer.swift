@@ -53,5 +53,16 @@ class TreeGraphProgrammer {
             return max(leftHeight, rightHeight) + 1
         }
     }
+    
+    
+//    static func createMinimalBST<T>( arr: [BinaryNode<T>], start: Int, end: Int) -> BinaryNode<T>? {
+//        
+//        if end < start {
+//            return nil
+//        }
+//        
+//        let mid = (start + end) / 2
+//        le
+//    }
 
 }
