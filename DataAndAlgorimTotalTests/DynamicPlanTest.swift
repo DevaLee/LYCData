@@ -36,4 +36,16 @@ class DynamicPlanTest: XCTestCase {
 
     }
 
+
+    func testMagicShow(){
+        let array = [7,1,4,6,8,9]
+
+
+        let index = RecrusiveDynamicPlan.magicQuick(array: array)
+
+        XCTAssertEqual(index, 1)
+
+
+    }
+
 }
