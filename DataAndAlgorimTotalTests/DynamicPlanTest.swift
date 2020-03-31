@@ -47,5 +47,21 @@ class DynamicPlanTest: XCTestCase {
 
 
     }
+    
+    func testMakeChange(){
+        let ways = RecrusiveDynamicPlan.makeChange(10, denom: 10)
+        
+        XCTAssertGreaterThan(ways, 2)
+        
+    }
+    
+    func testPlaceQueue(){
+        let columns = [0,0,0,0,0,0,0,0]
+        var results = [[Int]]()
+        RecrusiveDynamicPlan.placeQueues(row: 0, column: columns, results: &results)
+        
+        XCTAssertEqual(results.count, 92)
+        
+    }
 
 }
