@@ -29,14 +29,21 @@ extension BinarySearchTree: CustomStringConvertible {
             return BinaryNode(value: value)
         }
         if value < node.value {
-            node.leftChild = insert(from: node.leftChild, value: value)
+
+            let newNode = insert(from: node.leftChild, value: value)
+
+            node.leftChild = newNode
+            newNode.parentNode = node
         } else {
-            node.rightChild = insert(from: node.rightChild, value: value)
+            let newNode = insert(from: node.rightChild, value: value)
+
+            node.rightChild = newNode
+            newNode.parentNode = node
         }
         return node
     }
     
-    
+
     public var description: String {
         guard let root = root else { return "Empty tree" }
         return String(describing: root)
@@ -109,8 +116,16 @@ extension BinarySearchTree {
         }
         
         return node
-        
     }
+
+
+    func treeHeight() -> Int{
+
+        return root?.treeHeight() ?? 0
+    }
+ 
+
+
 }
 
 private extension BinaryNode {
