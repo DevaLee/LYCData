@@ -280,3 +280,36 @@ extension BinaryNode: CustomStringConvertible {
 }
 
 
+
+
+extension NSObject {
+
+//    static
+    static func isValidBST(_ node: BinaryNode<Int>?) -> Bool {
+
+        var cur = node
+        var nodeStack = Stack<BinaryNode<Int>>()
+        var minNumber = Int.min
+
+        while !nodeStack.isEmpty() || cur != nil {
+            while cur != nil {
+                nodeStack.push(cur!)
+                cur = cur?.leftChild
+            }
+
+            cur = nodeStack.pop()
+
+            print(cur?.value ?? 0)
+
+            if cur?.value ?? 0 < minNumber { return false }
+            minNumber = cur?.value ?? 0
+
+            cur = cur?.rightChild
+
+        }
+
+        return true
+    }
+}
+
+

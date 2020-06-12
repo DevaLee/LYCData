@@ -130,6 +130,13 @@ class BinarySearchTests: XCTestCase {
         XCTAssert(height == 3)
     }
 
+     func testisValidBST(){
+        //let obj = NSObject()
+        let valid = NSObject.isValidBST(tree)
+        XCTAssert(valid == true)
+
+    }
+
     func testTreeHeightIterator() {
         let height = tree.treeHeightIteration()
 
