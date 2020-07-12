@@ -61,6 +61,7 @@
 		4FD71D1923FA46D100057372 /* GraphTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1823FA46D100057372 /* GraphTest.swift */; };
 		4FD71D1B23FA55BB00057372 /* AdjacencyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1A23FA55BB00057372 /* AdjacencyMatrix.swift */; };
 		4FD71D1E23FBB33700057372 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD71D1D23FBB33700057372 /* Dijkstra.swift */; };
+		8912AAAB24BB43B4006EA7B7 /* BinaryTreeTraverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8912AAAA24BB43B4006EA7B7 /* BinaryTreeTraverseTests.swift */; };
 		895251AB242F899D00BC4358 /* HashProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895251AA242F899D00BC4358 /* HashProgrammer.swift */; };
 		895251AF242F9AE700BC4358 /* hashProgrammerGraph.png in Resources */ = {isa = PBXBuildFile; fileRef = 895251AE242F9AE700BC4358 /* hashProgrammerGraph.png */; };
 		895251B1242F9B6100BC4358 /* RecusiveDynamicPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895251B0242F9B6100BC4358 /* RecusiveDynamicPlan.swift */; };
@@ -150,6 +151,7 @@
 		4FD71D1823FA46D100057372 /* GraphTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTest.swift; sourceTree = "<group>"; };
 		4FD71D1A23FA55BB00057372 /* AdjacencyMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyMatrix.swift; sourceTree = "<group>"; };
 		4FD71D1D23FBB33700057372 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
+		8912AAAA24BB43B4006EA7B7 /* BinaryTreeTraverseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTraverseTests.swift; sourceTree = "<group>"; };
 		895251AA242F899D00BC4358 /* HashProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashProgrammer.swift; sourceTree = "<group>"; };
 		895251AE242F9AE700BC4358 /* hashProgrammerGraph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hashProgrammerGraph.png; sourceTree = "<group>"; };
 		895251B0242F9B6100BC4358 /* RecusiveDynamicPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecusiveDynamicPlan.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 				4FD71D1823FA46D100057372 /* GraphTest.swift */,
 				27968B9E235ED24500002DCC /* DataAndAlgorimTotalTests.swift */,
 				4F14615C23BDCC2E0017B188 /* BinarySearchTests.swift */,
+				8912AAAA24BB43B4006EA7B7 /* BinaryTreeTraverseTests.swift */,
 				4F14616123BDF2090017B188 /* TheHeapTests.swift */,
 				4F14616623BEDDD50017B188 /* PriorityQueueTests.swift */,
 				4FB1729923C9CF2C009C9034 /* BubbleSortTests.swift */,
@@ -646,6 +649,7 @@
 				4F14615D23BDCC2E0017B188 /* BinarySearchTests.swift in Sources */,
 				895251B3242FA04C00BC4358 /* DynamicPlanTest.swift in Sources */,
 				4FB1729A23C9CF2C009C9034 /* BubbleSortTests.swift in Sources */,
+				8912AAAB24BB43B4006EA7B7 /* BinaryTreeTraverseTests.swift in Sources */,
 				27968B9F235ED24500002DCC /* DataAndAlgorimTotalTests.swift in Sources */,
 				4F5B360B242DB09600B44A51 /* MathProgrammerTest.swift in Sources */,
 			);

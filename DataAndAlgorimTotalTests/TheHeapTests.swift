@@ -24,14 +24,34 @@ class TheHeapTests: XCTestCase {
             return element1 > element2
         }, elements: integers)
         let n = 3
-//        guard n > 0 else {
-//            return
-//        }
         var current = 0
         for _ in 0...n {
             current = heap.remove() ?? 0
         }
         
         XCTAssertEqual(current, 10)
+    }
+
+    func testTopK() {
+
+        let integers = [1,2,5,7,19,189,44,32,45,67,4,9]
+        let elements: [Int] = [Int]()
+        var heap = Heap(sort: { (element1, element2) -> Bool in
+            return element1 < element2
+        }, elements: elements)
+
+        for i in 0..<integers.count {
+            if i < 3 {
+                heap.insert(i)
+            }else {
+                let value = heap.peek()
+                if integers[i] > value ?? 0 {
+                    heap.remove()
+                    heap.insert(integers[i])
+                }
+            }
+        }
+
+        print(heap.elements)
     }
 }

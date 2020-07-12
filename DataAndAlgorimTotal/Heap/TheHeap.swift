@@ -61,7 +61,9 @@ struct Heap<Element: Equatable> {
     func parentIndex(ofChildAt index: Int) -> Int {
         return (index - 1) / 2
     }
+
     // 删除第一个元素
+    @discardableResult
     mutating func remove() -> Element? {
         guard !isEmpty else {
             return nil

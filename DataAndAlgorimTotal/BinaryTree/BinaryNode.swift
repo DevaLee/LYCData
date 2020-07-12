@@ -11,6 +11,97 @@ import Foundation
 public class BinaryTree<Element: Equatable> {
     public var root: BinaryNode<Element>?
 
+    //MARK: 遍历的非递归实现
+
+    func traversPreorderUnrecusive(visit:(Element)->()) {
+        var node = root
+        var stack = Stack<BinaryNode<Element>>()
+        while true {
+            if let newNode = node {
+                // 访问node节点
+                visit(newNode.value)
+                // 将该节点的右节点入栈
+                if let rightNode = newNode.rightChild {
+                    stack.push(rightNode)
+                }
+                //向左走
+                node = node?.leftChild
+            } else if (stack.isEmpty()) {
+                return
+            } else {
+                node = stack.pop()
+            }
+        }
+    }
+
+    func traversPostOrderUnrecrusive(visit:(Element)->()){
+//        guard var node = root else {
+//            return
+//        }
+//      //  var node = root
+//        // 记录上一次弹出访问的节点
+//        let prev: BinaryNode<Element>? = nil
+//
+//        var stack = Stack<BinaryNode<Element>>()
+//        stack.push(node)
+//
+//        while !stack.isEmpty() {
+//            let top = stack.peek();
+//            if ((top?.leftChild != nil && top?.rightChild != nil) || (prev != nil && prev?.parentNode == top)){
+//
+//            }
+//
+//
+//            if let left = top?.leftChild {
+//                stack.push(left)
+//            }
+//            if let right = top?.rightChild {
+//                stack.push(right)
+//            }
+//        }
+
+
+    }
+
+
+
+
+    func traversInorderNoRecrusive(visit:(Element) -> ()) {
+        var stack = Stack<BinaryNode<Element>>()
+        var node = root
+
+        while true {
+            if let newNode = node {
+                // 父节点先进栈,左节点在进栈
+                stack.push(newNode)
+                // 一直往左走
+                node = newNode.leftChild
+            } else if (stack.isEmpty()) {
+                return
+            }else {
+
+                node = stack.pop()
+                visit(node!.value)
+                // 检查右子节点
+                node = node?.rightChild
+
+            }
+        }
+
+
+//        if var newNode = root {
+//            stack.push(newNode)
+//
+//            if let leftNode = newNode.leftChild {
+//
+//            }
+//
+//
+//
+//        }
+
+
+    }
 
 }
 
@@ -63,7 +154,6 @@ public class BinaryNode<Element: Equatable> {
         rightChild?.traversePostOrder(visit: visit)
         visit(self.value)
     }
-
     /*
      序列化
 
