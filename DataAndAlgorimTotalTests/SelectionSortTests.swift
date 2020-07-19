@@ -26,4 +26,12 @@ class SelectionSortTests: XCTestCase {
         
     }
 
+
+    func testInsertSort() {
+        var array = [9, 4, 10, 3]
+        insertionSortTwo(&array)
+
+        XCTAssertEqual(array, [3, 4, 9, 10])
+    }
+
 }
