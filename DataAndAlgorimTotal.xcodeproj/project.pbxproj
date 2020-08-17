@@ -70,6 +70,8 @@
 		895251AF242F9AE700BC4358 /* hashProgrammerGraph.png in Resources */ = {isa = PBXBuildFile; fileRef = 895251AE242F9AE700BC4358 /* hashProgrammerGraph.png */; };
 		895251B1242F9B6100BC4358 /* RecusiveDynamicPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895251B0242F9B6100BC4358 /* RecusiveDynamicPlan.swift */; };
 		895251B3242FA04C00BC4358 /* DynamicPlanTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895251B2242FA04C00BC4358 /* DynamicPlanTest.swift */; };
+		89B1625B24EAC0D10043408D /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1625A24EAC0D10043408D /* Recursion.swift */; };
+		89B1626024EAC3EF0043408D /* RecursionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1625F24EAC3EF0043408D /* RecursionTest.swift */; };
 		89E48298242786390026EB90 /* TreeGraphProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E48297242786390026EB90 /* TreeGraphProgrammer.swift */; };
 		89EC67782413D75C009BE2F1 /* StackProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC67772413D75C009BE2F1 /* StackProgrammer.swift */; };
 		89EC677A2413E160009BE2F1 /* StackProgrammerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */; };
@@ -164,6 +166,8 @@
 		895251AE242F9AE700BC4358 /* hashProgrammerGraph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hashProgrammerGraph.png; sourceTree = "<group>"; };
 		895251B0242F9B6100BC4358 /* RecusiveDynamicPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecusiveDynamicPlan.swift; sourceTree = "<group>"; };
 		895251B2242FA04C00BC4358 /* DynamicPlanTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicPlanTest.swift; sourceTree = "<group>"; };
+		89B1625A24EAC0D10043408D /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
+		89B1625F24EAC3EF0043408D /* RecursionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursionTest.swift; sourceTree = "<group>"; };
 		89E48297242786390026EB90 /* TreeGraphProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGraphProgrammer.swift; sourceTree = "<group>"; };
 		89EC67772413D75C009BE2F1 /* StackProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProgrammer.swift; sourceTree = "<group>"; };
 		89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProgrammerTest.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
 				895251AE242F9AE700BC4358 /* hashProgrammerGraph.png */,
+				89B1625924EAC0330043408D /* Recursion */,
 				8912AAAC24D45AFF006EA7B7 /* Union */,
 				4F71F00D24064EA900DD1021 /* Support */,
 				4F3B4EAF23FFDF6C00CF3100 /* Questions */,
@@ -268,6 +273,7 @@
 				4F5B360A242DB09600B44A51 /* MathProgrammerTest.swift */,
 				895251B2242FA04C00BC4358 /* DynamicPlanTest.swift */,
 				8912AAB124D47765006EA7B7 /* UnionTest.swift */,
+				89B1625F24EAC3EF0043408D /* RecursionTest.swift */,
 				27968BA0235ED24500002DCC /* Info.plist */,
 			);
 			path = DataAndAlgorimTotalTests;
@@ -474,6 +480,14 @@
 			path = Union;
 			sourceTree = "<group>";
 		};
+		89B1625924EAC0330043408D /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				89B1625A24EAC0D10043408D /* Recursion.swift */,
+			);
+			path = Recursion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -644,6 +658,7 @@
 				27968BBE235F3ECB00002DCC /* Stack.swift in Sources */,
 				4F011B3B23900E8100F038E9 /* Summary.swift in Sources */,
 				27968BB9235ED26400002DCC /* Node.swift in Sources */,
+				89B1625B24EAC0D10043408D /* Recursion.swift in Sources */,
 				27968BC7235FE1DD00002DCC /* QueueLinkedList.swift in Sources */,
 				4F744C3523794C9D00A18FFE /* MinSubString.c in Sources */,
 				8912AAB424D5CDD2006EA7B7 /* QuickUnion.swift in Sources */,
@@ -667,6 +682,7 @@
 				89EC677A2413E160009BE2F1 /* StackProgrammerTest.swift in Sources */,
 				8912AAB224D47766006EA7B7 /* UnionTest.swift in Sources */,
 				4F14616223BDF2090017B188 /* TheHeapTests.swift in Sources */,
+				89B1626024EAC3EF0043408D /* RecursionTest.swift in Sources */,
 				4F3B4EB523FFE4DD00CF3100 /* ProgrammerTest.swift in Sources */,
 				4F14616723BEDDD50017B188 /* PriorityQueueTests.swift in Sources */,
 				4F576EE22404BFB500C9C299 /* LinkProgrammerTest.swift in Sources */,
