@@ -74,6 +74,8 @@
 		89B1626024EAC3EF0043408D /* RecursionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1625F24EAC3EF0043408D /* RecursionTest.swift */; };
 		89B1626324F027380043408D /* EightQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1626224F027380043408D /* EightQueue.swift */; };
 		89B1626524F02DF30043408D /* EightQueuesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1626424F02DF30043408D /* EightQueuesTest.swift */; };
+		89B1626A24F263030043408D /* Greedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1626924F263030043408D /* Greedy.swift */; };
+		89B1626C24F26CB20043408D /* GreedyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1626B24F26CB20043408D /* GreedyTest.swift */; };
 		89E48298242786390026EB90 /* TreeGraphProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E48297242786390026EB90 /* TreeGraphProgrammer.swift */; };
 		89EC67782413D75C009BE2F1 /* StackProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC67772413D75C009BE2F1 /* StackProgrammer.swift */; };
 		89EC677A2413E160009BE2F1 /* StackProgrammerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */; };
@@ -172,6 +174,8 @@
 		89B1625F24EAC3EF0043408D /* RecursionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursionTest.swift; sourceTree = "<group>"; };
 		89B1626224F027380043408D /* EightQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightQueue.swift; sourceTree = "<group>"; };
 		89B1626424F02DF30043408D /* EightQueuesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightQueuesTest.swift; sourceTree = "<group>"; };
+		89B1626924F263030043408D /* Greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greedy.swift; sourceTree = "<group>"; };
+		89B1626B24F26CB20043408D /* GreedyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyTest.swift; sourceTree = "<group>"; };
 		89E48297242786390026EB90 /* TreeGraphProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGraphProgrammer.swift; sourceTree = "<group>"; };
 		89EC67772413D75C009BE2F1 /* StackProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProgrammer.swift; sourceTree = "<group>"; };
 		89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProgrammerTest.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
 				895251AE242F9AE700BC4358 /* hashProgrammerGraph.png */,
+				89B1626624F262D20043408D /* Greedy */,
 				89B1626124F027140043408D /* EightQueue */,
 				89B1625924EAC0330043408D /* Recursion */,
 				8912AAAC24D45AFF006EA7B7 /* Union */,
@@ -280,6 +285,7 @@
 				8912AAB124D47765006EA7B7 /* UnionTest.swift */,
 				89B1625F24EAC3EF0043408D /* RecursionTest.swift */,
 				89B1626424F02DF30043408D /* EightQueuesTest.swift */,
+				89B1626B24F26CB20043408D /* GreedyTest.swift */,
 				27968BA0235ED24500002DCC /* Info.plist */,
 			);
 			path = DataAndAlgorimTotalTests;
@@ -502,6 +508,14 @@
 			path = EightQueue;
 			sourceTree = "<group>";
 		};
+		89B1626624F262D20043408D /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				89B1626924F263030043408D /* Greedy.swift */,
+			);
+			path = Greedy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -665,6 +679,7 @@
 				4F2F27C323AB81C500A8CC79 /* Trie.swift in Sources */,
 				4F576EE02404BC1800C9C299 /* LinkProgrammer.swift in Sources */,
 				4FD71D1E23FBB33700057372 /* Dijkstra.swift in Sources */,
+				89B1626A24F263030043408D /* Greedy.swift in Sources */,
 				895251B1242F9B6100BC4358 /* RecusiveDynamicPlan.swift in Sources */,
 				27968B8A235ED24300002DCC /* SceneDelegate.swift in Sources */,
 				4F3B4EAE23FFC27000CF3100 /* Prim.swift in Sources */,
@@ -698,6 +713,7 @@
 				8912AAB224D47766006EA7B7 /* UnionTest.swift in Sources */,
 				4F14616223BDF2090017B188 /* TheHeapTests.swift in Sources */,
 				89B1626024EAC3EF0043408D /* RecursionTest.swift in Sources */,
+				89B1626C24F26CB20043408D /* GreedyTest.swift in Sources */,
 				4F3B4EB523FFE4DD00CF3100 /* ProgrammerTest.swift in Sources */,
 				4F14616723BEDDD50017B188 /* PriorityQueueTests.swift in Sources */,
 				4F576EE22404BFB500C9C299 /* LinkProgrammerTest.swift in Sources */,
