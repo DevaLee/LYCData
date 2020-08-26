@@ -78,6 +78,8 @@
 		89B1626C24F26CB20043408D /* GreedyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1626B24F26CB20043408D /* GreedyTest.swift */; };
 		89B1626F24F28BF60043408D /* DivideAndConquer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1626E24F28BF60043408D /* DivideAndConquer.swift */; };
 		89B1627124F29A340043408D /* DividerAndConquerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1627024F29A340043408D /* DividerAndConquerTest.swift */; };
+		89B1627424F695070043408D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1627324F695070043408D /* File.swift */; };
+		89B1627624F6970F0043408D /* DynamicProgrammingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B1627524F6970F0043408D /* DynamicProgrammingTest.swift */; };
 		89E48298242786390026EB90 /* TreeGraphProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E48297242786390026EB90 /* TreeGraphProgrammer.swift */; };
 		89EC67782413D75C009BE2F1 /* StackProgrammer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC67772413D75C009BE2F1 /* StackProgrammer.swift */; };
 		89EC677A2413E160009BE2F1 /* StackProgrammerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */; };
@@ -180,6 +182,8 @@
 		89B1626B24F26CB20043408D /* GreedyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedyTest.swift; sourceTree = "<group>"; };
 		89B1626E24F28BF60043408D /* DivideAndConquer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivideAndConquer.swift; sourceTree = "<group>"; };
 		89B1627024F29A340043408D /* DividerAndConquerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerAndConquerTest.swift; sourceTree = "<group>"; };
+		89B1627324F695070043408D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		89B1627524F6970F0043408D /* DynamicProgrammingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicProgrammingTest.swift; sourceTree = "<group>"; };
 		89E48297242786390026EB90 /* TreeGraphProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGraphProgrammer.swift; sourceTree = "<group>"; };
 		89EC67772413D75C009BE2F1 /* StackProgrammer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProgrammer.swift; sourceTree = "<group>"; };
 		89EC67792413E160009BE2F1 /* StackProgrammerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackProgrammerTest.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 				27968B8B235ED24300002DCC /* ViewController.swift */,
 				4F011B3A23900E8100F038E9 /* Summary.swift */,
 				895251AE242F9AE700BC4358 /* hashProgrammerGraph.png */,
+				89B1627224F694FD0043408D /* DynamicProgramming */,
 				89B1626D24F28BE10043408D /* DivideAndConquer */,
 				89B1626624F262D20043408D /* Greedy */,
 				89B1626124F027140043408D /* EightQueue */,
@@ -292,6 +297,7 @@
 				89B1626424F02DF30043408D /* EightQueuesTest.swift */,
 				89B1626B24F26CB20043408D /* GreedyTest.swift */,
 				89B1627024F29A340043408D /* DividerAndConquerTest.swift */,
+				89B1627524F6970F0043408D /* DynamicProgrammingTest.swift */,
 				27968BA0235ED24500002DCC /* Info.plist */,
 			);
 			path = DataAndAlgorimTotalTests;
@@ -530,6 +536,14 @@
 			path = DivideAndConquer;
 			sourceTree = "<group>";
 		};
+		89B1627224F694FD0043408D /* DynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				89B1627324F695070043408D /* File.swift */,
+			);
+			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -713,6 +727,7 @@
 				27968BCC235FEEDE00002DCC /* TreeNode.swift in Sources */,
 				4F1C309123A7681400B5D652 /* AVLTree.swift in Sources */,
 				4F3B4EB123FFDFA300CF3100 /* Programmers.swift in Sources */,
+				89B1627424F695070043408D /* File.swift in Sources */,
 				4FB172A023C9F7C8009C9034 /* InsertionSort.swift in Sources */,
 				4F14616523BEDBE70017B188 /* PriorityQueue.swift in Sources */,
 			);
@@ -725,6 +740,7 @@
 				4FB1729E23C9D80F009C9034 /* SelectionSortTests.swift in Sources */,
 				4FD71D1923FA46D100057372 /* GraphTest.swift in Sources */,
 				89EC677A2413E160009BE2F1 /* StackProgrammerTest.swift in Sources */,
+				89B1627624F6970F0043408D /* DynamicProgrammingTest.swift in Sources */,
 				8912AAB224D47766006EA7B7 /* UnionTest.swift in Sources */,
 				4F14616223BDF2090017B188 /* TheHeapTests.swift in Sources */,
 				89B1626024EAC3EF0043408D /* RecursionTest.swift in Sources */,
