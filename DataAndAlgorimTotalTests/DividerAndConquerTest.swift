@@ -1,5 +1,5 @@
 //
-//  GreedyTest.swift
+//  DividerAndConquerTest.swift
 //  DataAndAlgorimTotalTests
 //
 //  Created by 李玉臣 on 2020/8/23.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import DataAndAlgorimTotal
 
-class GreedyTest: XCTestCase {
+class DividerAndConquerTest: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -31,28 +31,19 @@ class GreedyTest: XCTestCase {
         }
     }
 
+    func testMaxSubArrayOne(){
+        let nums = [-2, -1, -3, 4, -1, 2, 1, -5, 4]
+        let maxSum = DivideAndConquer.maxSubArrayOne(nums)
 
-    func testBestLoadSolution(){
-        let capacity = 30
-        let weights = [3, 5, 4, 10, 7, 14, 2, 11]
-        let count = Greedy.bestLoadSolution(weights, capacity)
-        XCTAssert(count == 5)
+        XCTAssert(maxSum == 6)
+        
     }
 
-    func testChangeCoin(){
-        let coins = [25, 5, 10, 1]
-        let totalMoney = 41
-        let exchangeCoins = Greedy.coinChange(coins, totalMoney)
-        print(exchangeCoins)
+    func testMaxSubArrayTwo() {
+        let nums = [-2, -1, -3, 4, -1, 2, 1, -5, 4]
+        let maxSum = DivideAndConquer.maxSubArrayTwo(nums)
 
-
-        let anotherCoins = [25, 20, 5, 1]
-
-        let anotherExchangeCoins = Greedy.coinChange(anotherCoins, totalMoney)
-        print(anotherExchangeCoins)
-
-        XCTAssert(exchangeCoins == [25, 10, 5 ,1] && anotherExchangeCoins == [25, 5, 5, 5, 1])
+        XCTAssert(maxSum == 6)
 
     }
-
 }
