@@ -38,4 +38,21 @@ class DynamicProgrammingTest: XCTestCase {
         let num = DynamicProgramming.coinsChangeThree(41)
         XCTAssert(num == 3)
     }
+
+    func testAnmoShi(){
+        let num = DynamicProgramming.anmoshi([1, 2, 3, 1])
+        XCTAssert(num == 4)
+    }
+
+    func testAnmoShiTwo(){
+        let num = DynamicProgramming.anmoshiTwo([1, 2, 3, 1])
+        XCTAssert(num == 4)
+
+    }
+
+    func testAnmoShiThree(){
+        let num = DynamicProgramming.anmoshiThree([1, 2, 3, 1])
+        XCTAssert(num == 4)
+
+    } 
 }
